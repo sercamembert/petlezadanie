@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html>
+<meta charset="UTF-8">
+<style>
+
+
+  </style>
+
+</head>
+
+<body>
+
+<ol type="1">
+<h2><li>Co to jest programowanie?</li></h2>
+  <span style="font-size: 15px">
+<b>Programowanie</b> to proces składający się z etapów:<br>
+a)tworzenia programu,<br>
+b) testowanie programu.<br>
+
+<h2><li>Reguły stosowane w językach programowania</li></h2>
+<b>Język programowania</b> musi mieść określone:<br>
+a)<u>Reguły syntaktyczne</u>→ reguły <b>składni</b> wyrażeń i funkcji użytych w programie,<br>
+b)<u>Reguły semantyczne</u>→ semantyka języka programowania definiuje precyzyjnie <b>znaczenie<br>
+poszczególnych symboli</b> (instrukcje, operatory itp.) oraz ich funkcję w programie.
+
+<h2><li>Definicja algorytmu</li></h2>
+<b>Definicja 1</b><br>
+<b>Algorytm</b> →jest to pewien ciąg czynności, który prowadzi do rozwiązania danego problemu<br>
+w skończonej ilości kroków.
+<br><br>
+<b>Definicja 2</b><br>
+<b>Algorytm</b>→ to jednoznaczny przepis, opisujący krok po kroku sposób postępowania w celu<br>
+rozwiązania pewnego problemu lub sposobu osiągnięcia jakiegoś celu.<br>
+Ilość kroków algorytmu zależy od tego, jak złożony jest problem, którego on dotyczy. Zawsze<br>
+jednak liczba tych kroków będzie <b>liczbą skończoną.</b><br>
+
+<h2><li>Cechy algorytmu</li></h2>
+<b>Cechy charakterystyczne poprawnego algorytmu:</b>
+  <ol type="1">
+<li><b>Poprawność</b> - dla każdego przypisanego zestawu danych, po wykonaniu skończonej<br>
+liczby czynności, algorytm prowadzi do poprawnych wyników.,</li>
+<li><b>Jednoznaczność</b> - w każdym przypadku zastosowania algorytmu dla tych samych<br>
+danych otrzymamy ten sam wynik.</li>
+<li><b>Szczegółowość</b> - wykonawca algorytmu musi rozumieć opisane czynności i potrafić je<br>
+wykonywać.</li>
+<li><b>Uniwersalność</b> - algorytm ma służyć rozwiązywaniu pewnej grupy zadań, a nie tylko<br>
+jednego zadania. Przykładowo algorytm na rozwiązywanie równań w postaci ax + b=0 ma je
+rozwiązać dla dowolnych współczynników a i b, a nie tylko dla jednego konkretnego zadania,<br>
+np. 2x + 6 = 0<br></li>
+<li><b>Skończoność</b> – dla każdego zbioru poprawnych danych wejściowych algorytm powinien<br>
+zwracać wyniki w skończonej liczbie kroków.</li>
+<li><b>Efektywność</b> – algorytm powinien rozwiązywać problem w jak najmniejszej liczbie
+kroków.</li>
+</ol>
+
+<h2><li>Etapy konstruwania algorytmu</li></h2>
+<b>Etapy konstruwania algorytmu(programu):</b><br>
+<ol type="1">
+<li>Sformułowanie zadania.</li>
+<li>Określenie danych wejściowych</li>
+<li>Określenie wyniku oraz sposobu jego prezentacji.</li>
+<li>Ustalenie metody wykonania zadania.</li>
+<li>Przy użyciu wybranej metody następuje zapisanie algorytmu.</li>
+<li>Dokonujemy analizy poprawności rozwiązania.</li>
+<li>Testowanie rozwiązania dla różnych danych.</li>
+<li>Ocena skuteczności tegoż algorytmu.</li>
+  </ol>
+
+<h2><li>Sposoby</li></h2>
+<b>Algorytmy można przedstawiać m.in. następującymi sposobami:</b>
+<ul type="disc">
+<li>słowny opis</li>
+<li>schemat blokowy</li>
+<li>lista kroków</li>
+<li>drzewo algorytmu</li>
+<li>drzewo wyrażeń</li>
+<li>w pseudojęzyk</li>
+<li>w język programowania</li>
+</ul>
+<br><br>
+<b><u>Różne sposoby przedstawiania algorytmów</u></b><br>
+<b>a)opis słowny</b><br>
+Jest na ogół pierwszym, mało ścisłym opisem sposobem rozwiązania problemu. Rozpoczyna<br>
+się często dyskusją, w jaki sposób można rozwiązać postawione zadanie. Dyskusja służy do<br>
+rozważań nad sposobem i technikami przydatnymi w rozwiązania problemu.<br>
+np. Opis słowny do algorytmu opisującego funkcję modułu (wartość bezwzględną).<br>
+Dla wartości dodatnich argumentu x funkcja przyjmuje wartość x, dla wartości ujemnych<br>
+argumentu x funkcja przyjmuje wartość –x.
+b)<b>schemat blokowy</b><br>
+c)<b>lista kroków</b><br>
+Poszczególne kroki zawierają opis operacji, które mają być wykonane prze algorytm. Mogą w<br>
+nich również wystąpić polecenia związane ze zmianą kolejności wykonywanych kroków.<br>
+Kolejność kroków jest wykonywana w kolejności ich opisu z wyjątkiem sytuacji gdy jedno z<br>
+poleceń w kroku jest przejściem do kroku o podanym numerze. Budowa opisu algorytmu w<br>
+postaci listy kroków jest następujący:<br>
+<ul type="square">
+<li>tytuł algorytmu</li>
+<li>specyfikacja problemu</li>
+<li>lista kroków</li>
+<li>komentarze ujęte w nawiasy klamrowe {komentarz}</li>
+  </ul>
+<img src="tabela2.png" />
+<b>Algorytm obliczania wartości funkcji SGN(x)</b>
+Dane: Dowolna liczba rzeczywista x.<br>
+Wynik:Wartość funkcji<br>
+<b>Krok 0.</b>   Wczytaj wartość danej x<br>
+<b>Krok 1.</b>   Jeśli x>0, to f(x)=1. Zakończ algorytm<br>
+<b>Krok 2.</b>   {W tym przypadku x<= 0.} Jeśli x=0, to f(x)=0 . Zakończ algorytm<br>
+<b>Krok 3.</b>   {W tym przypadku x< 0.} Mamy f(x)=–1 . Zakończ algorytm.<br>
+<br>
+<b>d)drzewo algorytmu</b><br>
+Nazywany jest również drzewem obliczeń. Każde dwie drogi obliczeń mogą mieć tylko<br>
+początkowe fragmenty wspólne, ale po rozejściu już się nie spotkają.<br>
+np. Drzewo algorytmu dla funkcji SGN(x).<br>
+<img src="schemat.png" />
+<b>e)drzewo wyrażeń</b><br>
+Stosowane do obliczeń wyrażeń arytmetycznych.<br>
+np. Wyrażenie (a+sin(x))*b/(a–b)
+<img src="schemat2.png" />
+<br>
+<b>f)program w języku programowania np. C++, Pascal</b><br>
+<br>
+<b>g)pseudojęzyk</b><br>
+PROGRAM Wycieczka;<br>
+ZMIENNE punkty:naturalne;<br>
+&nbsp;&nbsp;&nbsp;koszty, dofinansowanie:rzeczywiste;<br>
+ZACZNIJ;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WPROWADŹ(PUNKTY,KOSZTY);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEŚLI punkty >=100 i punkty <= TO dofinansowanie :=1/3*koszty+0.2*koszty<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W PRZECIWNYM WYPADKU<br>
+dofinansowanie:=0.2*koszty;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WYPROWADŹ('Dofinansowanie wynosi:'dofinansowanie);<br>
+ZAKOŃCZ.<br>
+
+<h2><li>Specyfikacja problemu</li></h2>
+Jest to dokładny opis problemu, który chcemy rozwiązać.<br>
+Specyfikacja składa się z:<br>
+<ul type="pane">
+<li><b>danych wejściowych,</b></li>
+<li><b>dane wyjściowe</b> oraz warunki jakie muszą spełniać (czyli związek pomiędzy danymi a
+wynikami).</li>
+<li><b>warunki</b> jakie muszą spełniać dane wejściowe</li>
+<li><b>rysunki</b> ( jeśli są konieczne), <b>wzory</b> obliczeniowe</li>
+  </ul>
+
+  <h2><li>Symbole stosowane w schematach blokowych.</li></h2>
+<img src="dziwna1.png" />
+<img src="dziwna2.png" />
+
+<h2><li>Reguły rysowania schematów blokowych.</li></h2>
+<ol type="I">
+<li>Po zbudowaniu schematu blokowego nie powinno być takich strzałek, które z nikąd nie
+wychodzą, lub do nikąd nie dochodzą.</li>
+<li>Każdy schemat blokowy musi mieć tylko jeden element startowy oraz co najmniej jeden
+element końca algorytmu</li>
+<li>Element łączący(strzałki łączące) powinien być rysowany w poziomie i pionie, załamania
+pod kątem prostym.</li>
+</ol>
+
+<h2><li>Podział algorytmów</li></h2>
+  <u>Definicja algorytmu liniowego</u><br>
+Algorytmem liniowym nazywamy taki algorytm, który ma postać listy kroków<br>
+wykonywanych <b><u>zgodnie z ich kolejnością.</u></b><br>
+Algorytmy liniowe są zapisem obliczeń, które mają postać ciągu operacji rachunkowych<br>
+wykonywanych bez sprawdzania jakichkolwiek warunków.<br>
+  <u>Algorytm z warunkami (rozgałęzieniami)</u><br>
+Ten typ algorytmu musi mieć bloki decyzyjne czyli bloki sprawdzania warunków.<br>
+  <u>Algorytm numeryczne</u><br>
+Algorytmy, które wykonują działania matematyczne na danych liczbowych, nazywamy<br>
+algorytmami numerycznymi.<br>
+  <u>Algorytm typu dziel i zwyciężaj</u><br>
+Dzielimy problem na kilka mniejszych, a te znowu dzielimy, aż ich rozwiązania staną się<br>
+oczywiste,<br>
+<u>Algorytmy iteracyjne</u><br>
+Iteracja jest to zapętlenie algorytmu, czyli wykonywania danych działań, dopóki warunek<br>
+iteracji nie zostanie spełniony. Jest ona podstawą wszystkich choć troszkę bardziej złożonych<br>
+algorytmów. Zazwyczaj ma ona składnię wykonuj "jakaś czynność" dopóki "jakieś wyrażenie<br>
+logiczne".<br>
+  <u>Algorytmy rekurencyjne<br></u>
+Rekurencje wykorzystuje się do rozwiązywania problemów gdzie powtarza się czynność aby<br>
+do niego dojść. Swoim działaniem przypomina iteracje. Jednak w tym przypadku <b>funkcja <br>
+sama siebie wywołuje, dopóki nie otrzyma rozwiązania,</b> natomiast tam mieliśmy<br>
+powtórzenie pewnej czynności określoną ilość razy.<br>
+
+<h2><li>Złożoność algorytmów</li></h2>
+<b>Złożoność algorytmu</b>- ilość zasobów potrzebnych do poprawnego działania danego<br>
+algorytmu<br>
+<b>Złożoności obliczeniowa</b>-Algorytm wykonujący najmniejszą ilość operacji podstawowych w<br>
+celu rozwiązania problemu.<br>
+<b>Złożoność czasowa</b>- Określa ilość operacji podstawowych potrzebnych do wykonania<br>
+algorytmu o danej wielkości wejściowej.<br>
+<b>Złożoność pamięciowa</b>- Określa ilość przestrzeni pamięci wirtualnej potrzebnej do<br>
+wykonania algorytmu z określonym zestawem danych wejściowych.<br>
+
+<h2><li>KODY ASCII</li></h2>
+<a href="kodyASC.html" />Link do kodów ASCII</a>
+
+  </ol>
+
+
+
+
+
+
+
+</body>
+</html>
